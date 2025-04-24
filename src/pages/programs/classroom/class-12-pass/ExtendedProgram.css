@@ -1,0 +1,57 @@
+.program-details {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.program-details h1 {
+    color: #003366;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.program-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.program-section h2 {
+    color: #003366;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #003366;
+}
+
+.program-section p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.program-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.program-section ul li {
+    color: #444;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.program-section ul li:before {
+    content: "•";
+    color: #003366;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.program-submenu {
+    max-height: 400px; /* Increased for 4 items */
+}

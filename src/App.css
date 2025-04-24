@@ -1,0 +1,225 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main background with gradient */
+body {
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg,
+    #e35f14 0%,      /* Bright orange at top */
+    #d5611e 20%,     /* Lighter orange */
+    #c5663b 40%,     /* Orange-brown transition */
+    #9a5e52 60%,     /* Brown-blue transition */
+    #415e7e 80%,     /* Medium blue */
+    #1e4d6b 100%     /* Deep blue at bottom */
+  );
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* Ensure content appears above background */
+#root {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
+
+/* App.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #333;
+  padding: 15px;
+  color: white;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.nav-links li:hover {
+  background-color: #444;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li {
+  padding: 12px 16px;
+}
+
+.dropdown-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.dropdown-content li:hover {
+  background-color: #444;
+}
+
+/* Page Container */
+.page-container {
+  padding: 20px;
+}
+
+.programs-page h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.programs-page p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.programs-page ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.programs-page li {
+  margin: 10px 0;
+}
+
+.programs-page a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.programs-page a:hover {
+  text-decoration: underline;
+}
+
+/* Program Details Page */
+.program-details h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.program-details p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.program-details ul {
+  list-style-type: square;
+  margin: 20px 0;
+}
+
+.program-details li {
+  margin: 10px 0;
+}
+/* In App.css or a global stylesheet */
+.about-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.about-heading {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-description {
+  font-size: 1.2rem;
+  color: #555;
+}
+.hero-container {
+  background-image: url('./assets/banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  font-size: 1.2rem;
+  padding: 10px 30px;
+}

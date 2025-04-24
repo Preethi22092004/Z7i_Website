@@ -1,0 +1,32 @@
+/* About.css */
+.about-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-heading {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  /* Policies page: force non-header text to black */
+  .about-page p,
+  .about-page li,
+  .about-page .contact-method p,
+  .about-page .policy-content ul {
+    color: #000 !important;
+  }
+  
+  /* Keep headers default color */
+  .about-page h1,
+  .about-page h2,
+  .about-page h3,
+  .about-page .contact-method h4 {
+    color: inherit;
+  }
+  

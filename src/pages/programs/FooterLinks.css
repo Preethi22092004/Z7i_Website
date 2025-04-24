@@ -1,0 +1,171 @@
+/* Footer Links Container */
+.footer-links-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr 1.2fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+/* Footer Column */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Column Headings */
+.footer-column h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.footer-column h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 2px;
+  background-color: #003366;
+}
+
+/* About Text */
+.about-text {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Address Info */
+.address-info {
+  color: #bbb;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-style: normal;
+}
+
+.address-info a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.address-info a:hover {
+  color: #fff;
+}
+
+/* Footer Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+  display: inline-block;
+  position: relative;
+  padding-left: 15px;
+}
+
+.footer-links a::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #003366;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Program Links - make them stand out */
+.footer-links a[href^="/programs/"] {
+  font-weight: 600;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.social-icon:hover {
+  background-color: #003366;
+  transform: translateY(-3px);
+}
+
+/* Margin top for second headings in same column */
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .footer-links-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-links-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+  
+  .footer-column:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-links-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .footer-column:last-child {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-links-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  
+  .footer-column:last-child {
+    grid-column: auto;
+  }
+} 

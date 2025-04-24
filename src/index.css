@@ -1,0 +1,35 @@
+/* Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import styles */
+@import './styles/bulletStyles.css';
+@import './styles/global-styles.css';
+
+/* Custom styles */
+.login-page {
+  padding: 30px;
+  text-align: center;
+}
+
+.login-page input {
+  margin: 10px;
+  padding: 8px;
+  width: 200px;
+  color: #333; /* Dark text for inputs */
+  background: rgba(255, 255, 255, 0.9); /* Light background for inputs */
+}
+
+.login-page button {
+  padding: 8px 16px;
+  background: var(--gradient-start, #eb6d1f); /* Use the gradient start color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-page button:hover {
+  background: var(--gradient-middle1, #a85832);
+}

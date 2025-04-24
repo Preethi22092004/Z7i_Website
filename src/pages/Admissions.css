@@ -1,0 +1,178 @@
+.admissions-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.admissions-container h1 {
+    text-align: center;
+    color: #002b5c;
+    font-size: 2.5rem;
+}
+
+.admissions-subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.steps-list {
+    margin-top: 20px;
+}
+
+.step-item {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.step-header {
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: #002b5c;
+}
+
+.step-content {
+    padding: 15px 20px;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.5;
+}
+
+.admissions-page {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.admissions-header {
+    background-color: #002447;
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.admissions-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.admissions-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.admissions-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.admissions-section h2 {
+    color: #002447;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+.test-details {
+    list-style: none;
+    padding: 0;
+}
+
+.test-details li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.test-details li strong {
+    color: #002447;
+    margin-right: 0.5rem;
+}
+
+.registration-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.method h3 {
+    color: #002447;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.method ul {
+    padding-left: 1.5rem;
+}
+
+.method li {
+    margin-bottom: 0.8rem;
+}
+
+.test-papers {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.paper {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.paper h3 {
+    color: #002447;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.important-notes li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.contact-info li strong {
+    color: #002447;
+    margin-right: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .admissions-header h1 {
+        font-size: 2rem;
+    }
+    
+    .admissions-section {
+        padding: 1.5rem;
+    }
+    
+    .registration-methods,
+    .test-papers {
+        grid-template-columns: 1fr;
+    }
+}

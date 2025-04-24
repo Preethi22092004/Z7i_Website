@@ -1,0 +1,12 @@
+{
+    "rsc": false,
+    "tailwind": {
+      "config": "tailwind.config.js",
+      "css": "src/styles/globals.css"
+    },
+    "aliases": {
+      "components": "@/components",
+      "lib": "@/lib"
+    }
+  }
+  

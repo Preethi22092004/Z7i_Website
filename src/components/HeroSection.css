@@ -1,0 +1,19 @@
+/* components/HeroSection.css */
+.hero-section {
+  background-color: #f9fafb;
+  padding: 4rem 0;
+}
+
+.hero-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}

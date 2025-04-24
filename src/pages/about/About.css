@@ -1,0 +1,1392 @@
+/* Common styles */
+.about-page {
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 64px);
+}
+
+.about-header {
+    padding: 3rem 0;
+    background: linear-gradient(45deg, #1a237e, #0d47a1);
+    color: white;
+    text-align: center;
+    border-bottom: 4px solid #ffcc00;
+    margin-bottom: 2rem;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.about-header h2 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.content-section {
+    background: white;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    border-top: 4px solid #1a237e;
+}
+
+.section-title {
+    color: #1a237e;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffcc00;
+    text-align: center;
+}
+
+/* Common box styles */
+.content-box {
+    background: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #1a237e;
+    transition: transform 0.3s ease;
+}
+
+.content-box:hover {
+    transform: translateX(5px);
+}
+
+.content-box h3 {
+    color: #1a237e;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.content-box p {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.content-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.content-box li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.content-box li:before {
+    content: "•";
+    color: #1a237e;
+    position: absolute;
+    left: 0;
+}
+
+/* Vision & Mission Section */
+.vision-mission {
+    margin-bottom: 3rem;
+}
+
+.vision-mission h2 {
+    color: #1a237e;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.vision-mission ul {
+    list-style: none;
+    padding: 0;
+    margin: 2rem 0;
+}
+
+.vision-mission li {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    background: #f8f9fa;
+    border-left: 4px solid #1a237e;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+/* Career specific styles */
+.career-tracks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.track-card {
+    background: #f8f9fa;
+    padding: 2.5rem;
+    border-radius: 8px;
+    border-top: 4px solid #1a237e;
+    transition: transform 0.3s ease;
+    text-align: center;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.track-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.track-card h3 {
+    color: #1a237e;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.track-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Apply Section */
+.apply-section {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.apply-section h2 {
+    color: #1a237e;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #1a237e;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background: #0d47a1;
+}
+
+/* Chairman's Message Styles */
+.chairman-section {
+    padding: 3rem 2rem;
+}
+
+.chairman-quote {
+    font-size: 1.4rem;
+    color: #1a237e;
+    font-style: italic;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-left: 4px solid #1a237e;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.chairman-content {
+    line-height: 1.8;
+    color: #333;
+    font-size: 1.1rem;
+    margin: 2rem 0;
+}
+
+.chairman-content p {
+    margin-bottom: 1.5rem;
+}
+
+.signature-block {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+.signature-block h3 {
+    color: #1a237e;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+.chairman-header {
+    background: linear-gradient(45deg, #1a237e, #0d47a1);
+}
+
+.chairman-message {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 3rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Added new styles for chairman image and layout */
+.chairman-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chairman-profile {
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 150px;
+}
+
+.chairman-img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+    border: 1px solid #e0e0e0;
+}
+
+.chairman-name {
+    text-align: center;
+}
+
+.chairman-name h3 {
+    color: #1a237e;
+    margin: 10px 0 5px;
+    font-size: 1.2rem;
+}
+
+.chairman-name p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.message-content {
+    width: 100%;
+}
+
+.message-highlight {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #1a237e;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #1a237e;
+    border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .chairman-container {
+        flex-direction: column;
+    }
+    
+    .chairman-profile {
+        margin: 0 auto 30px;
+    }
+}
+
+.signature {
+    margin-top: 4rem;
+    border-top: 1px solid #eee;
+    padding-top: 2rem;
+}
+
+.signature h3 {
+    color: #002447;
+    font-size: 1.8rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.designation {
+    color: #666;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.company {
+    color: #002447;
+    font-weight: 600;
+    margin: 0.5rem 0 0;
+}
+
+/* Journey Page Styles */
+.journey-section {
+    padding: 2rem;
+}
+
+.milestone {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-left: 4px solid #1a237e;
+    background: #f8f9fa;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.milestone:hover {
+    transform: translateX(10px);
+}
+
+.milestone h3 {
+    color: #1a237e;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.journey-header {
+    background: linear-gradient(45deg, #004d40, #00695c);
+}
+
+.journey-content {
+    background: white;
+    padding: 1.5rem;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.journey-intro {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    max-width: 100%;
+    margin: 0 0 2rem;
+    line-height: 1.6;
+    padding: 0;
+}
+
+.journey-timeline {
+    max-width: 100%;
+    margin: 0;
+    position: relative;
+    padding: 2rem 0;
+}
+
+.timeline-item {
+    background: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #1a237e;
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover {
+    transform: translateX(5px);
+}
+
+.timeline-item h3 {
+    color: #1a237e;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.timeline-item p {
+    color: #444;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.timeline-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.timeline-item li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.timeline-item li:before {
+    content: "•";
+    color: #1a237e;
+    position: absolute;
+    left: 0;
+}
+
+.journey-conclusion {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #002447;
+    text-align: center;
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    border-top: 1px solid #eee;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .about-header h1 {
+        font-size: 2rem;
+    }
+    
+    .about-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .chairman-message {
+        padding: 1.5rem;
+    }
+    
+    .message-highlight {
+        font-size: 1.1rem;
+    }
+
+    .about-container {
+        padding: 0 1rem;
+    }
+
+    .chairman-quote {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+
+    .journey-content {
+        padding: 1.5rem;
+    }
+    
+    .timeline-item {
+        padding: 1.5rem;
+    }
+    
+    .journey-intro,
+    .journey-conclusion {
+        font-size: 1.1rem;
+    }
+
+    .policies-grid,
+    .career-tracks,
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .career-tracks {
+        grid-template-columns: 1fr;
+        padding: 0 0.5rem;
+    }
+
+    .track-card {
+        min-height: auto;
+        padding: 2rem;
+    }
+}
+
+/* Policies Page Styles */
+.policies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.policy-card {
+    padding: 1.5rem;
+    border-left: 4px solid #002447;
+    background: #f8f9fa;
+}
+
+.policy-card h3 {
+    color: #002447;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.policies-header {
+    background: linear-gradient(45deg, #1a237e, #0d47a1);
+}
+
+.policies-content {
+    background: white;
+    padding: 1.5rem;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.policy-intro {
+    background: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #1a237e;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.policy-item {
+    background: #f8f9fa;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #1a237e;
+}
+
+.policy-header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.policy-header h3 {
+    margin: 0;
+    color: #1a237e;
+}
+
+.policy-content {
+    padding: 1rem 2rem;
+    border-top: 1px solid #eee;
+}
+
+.policy-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.policy-content li {
+    margin: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.policy-content li:before {
+    content: "•";
+    color: #1a237e;
+    position: absolute;
+    left: 0;
+}
+
+.dropdown-icon {
+    color: #1a237e;
+    font-size: 1.2rem;
+}
+
+.policy-item h3 {
+    color: #1a237e;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.policy-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.policy-item li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.policy-item li:before {
+    content: "•";
+    color: #1a237e;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.policy-item:hover {
+    transform: none;
+}
+
+.contact-section {
+    background: #f8f9fa;
+    padding: 3rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    border-top: 4px solid #1a237e;
+    text-align: center;
+}
+
+.contact-section h3 {
+    color: #002447;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.application-note {
+    color: #666;
+    margin: 1.5rem 0;
+}
+
+.contact-section ul {
+    list-style: none;
+    padding: 0;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-section li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .policies-content {
+        padding: 1.5rem;
+    }
+    
+    .policy-item {
+        padding: 1.5rem;
+    }
+    
+    .policy-intro {
+        font-size: 1.1rem;
+    }
+}
+
+/* Policies Dropdown Styles */
+.policies-dropdown {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.policies-dropdown-header {
+    background: #f8f9fa;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border-left: 4px solid #1a237e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.policies-dropdown-header h3 {
+    color: #1a237e;
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.policies-dropdown-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #eee;
+    margin-top: 0.5rem;
+}
+
+.policy-section {
+    margin-bottom: 2.5rem;
+}
+
+.policy-section:last-child {
+    margin-bottom: 0;
+}
+
+.policy-section h4 {
+    color: #1a237e;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.policy-section p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.policy-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.policy-section li {
+    color: #444;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.policy-section li:before {
+    content: "•";
+    color: #1a237e;
+    position: absolute;
+    left: 0;
+}
+
+.policy-contact {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.policy-contact h4 {
+    color: #1a237e;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    color: #444;
+}
+
+.contact-list li i {
+    color: #1a237e;
+    margin-right: 1rem;
+}
+
+/* Animation for dropdown */
+.policies-dropdown-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.policies-dropdown.active .policies-dropdown-content {
+    max-height: 2000px;
+    transition: max-height 0.5s ease-in;
+}
+
+.policies-dropdown-header:hover {
+    background: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .policies-dropdown-header {
+        padding: 1rem;
+    }
+
+    .policies-dropdown-content {
+        padding: 1.5rem;
+    }
+
+    .policy-section h4 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Careers Page Styles */
+.careers-section {
+    padding: 2rem;
+}
+
+.vision-mission {
+    margin-bottom: 3rem;
+}
+
+.career-tracks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 0 1rem;
+}
+
+.career-tracks h2 {
+    color: #1a237e;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+.track-card {
+    background: #f8f9fa;
+    padding: 2.5rem;
+    border-radius: 8px;
+    border-top: 4px solid #1a237e;
+    transition: transform 0.3s ease;
+    text-align: center;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.track-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.track-icon {
+    font-size: 2.5rem;
+    color: #1a237e;
+    margin-bottom: 1rem;
+}
+
+.track-card h3 {
+    color: #1a237e;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.track-card p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.track-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.track-card li {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.track-card li:before {
+    content: "•";
+    color: #ffcc00;
+    position: absolute;
+    left: 0;
+}
+
+/* Apply Section */
+.apply-section {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 3rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.apply-section h2 {
+    color: #1a237e;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #1a237e;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background: #0d47a1;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.careers-header {
+    background: linear-gradient(45deg, #bf360c, #d84315);
+}
+
+.careers-content {
+    background: white;
+    padding: 1.5rem;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.careers-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 4rem;
+}
+
+.careers-intro h3 {
+    color: #002447;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.careers-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.career-track {
+    background: #fff;
+    padding: 1.25rem;
+    border-radius: 0;
+    text-align: left;
+    border-left: 3px solid #002447;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: none;
+}
+
+.career-track:hover {
+    transform: none;
+}
+
+.track-icon {
+    font-size: 1.5rem;
+    color: #002447;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+}
+
+.career-track h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: #002447;
+}
+
+.career-track ul {
+    text-align: left;
+    padding-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.career-track li {
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.locations-section {
+    margin: 2rem 0;
+    padding-top: 2rem;
+    text-align: left;
+}
+
+.globe-icon {
+    font-size: 4rem;
+    color: #002447;
+    margin: 2rem 0;
+}
+
+.location-categories {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.apply-section {
+    text-align: left;
+    margin-top: 2rem;
+    padding-top: 2rem;
+}
+
+.apply-button {
+    background: #002447;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    border-radius: 0;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.apply-button:hover {
+    background: #003366;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 992px) {
+    .career-tracks {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        padding: 0 1rem;
+    }
+
+    .content-section {
+        padding: 1.5rem;
+    }
+
+    .chairman-message {
+        padding: 1.5rem;
+    }
+    
+    .message-highlight {
+        font-size: 1.1rem;
+    }
+
+    .about-container {
+        padding: 1rem;
+    }
+
+    .chairman-quote {
+        font-size: 1.2rem;
+        padding: 1.5rem;
+    }
+
+    .journey-content {
+        padding: 1.5rem;
+    }
+    
+    .timeline-item {
+        padding: 1.5rem;
+    }
+    
+    .journey-intro,
+    .journey-conclusion {
+        font-size: 1.1rem;
+    }
+
+    .policies-grid,
+    .career-tracks,
+    .locations-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .career-tracks {
+        grid-template-columns: 1fr;
+        padding: 0 0.5rem;
+    }
+
+    .track-card {
+        min-height: auto;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .policies-grid,
+    .careers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .location-categories {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .careers-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Content styling */
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #002447;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 1rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+/* Common section styles */
+.section-title {
+    color: #1a237e;
+    font-size: 1.8rem;
+    margin: 2rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffcc00;
+    text-align: center;
+}
+
+/* Add these styles for the Careers page */
+.intro-box {
+    background: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    border: none;
+    border-left: 4px solid #1a237e;
+}
+
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 2rem 0 3rem;
+}
+
+.career-tracks {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0 3rem;
+    padding: 0 1rem;
+}
+
+.track-card {
+    background: #f8f9fa;
+    padding: 2.5rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-top: 4px solid #1a237e;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.track-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.track-icon {
+    font-size: 2.5rem;
+    color: #1a237e;
+    margin-bottom: 1rem;
+}
+
+.development-section, .presence-section {
+    margin: 3rem 0;
+}
+
+.presence-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.presence-item {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.presence-icon {
+    font-size: 2rem;
+    color: #1a237e;
+    margin-bottom: 1rem;
+}
+
+.contact-section {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 3rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    border-top: 4px solid #1a237e;
+}
+
+.apply-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: #1a237e;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background: #0d47a1;
+}
+
+@media (max-width: 992px) {
+    .vision-mission-grid,
+    .career-tracks,
+    .presence-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Policies Section Styles */
+.policies-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.policy-intro {
+    background: #f8f9fa;
+    padding: 2.5rem;
+    margin-bottom: 3rem;
+    border-radius: 8px;
+    border-left: 4px solid #1a237e;
+    line-height: 1.8;
+}
+
+.policy-intro h2 {
+    color: #1a237e;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.policy-intro p {
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.policies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.policy-card {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 8px;
+    border-top: 4px solid #1a237e;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.policy-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.policy-card h3 {
+    color: #1a237e;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ffcc00;
+}
+
+.policy-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.policy-card li {
+    color: #444;
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.6;
+}
+
+.policy-card li:before {
+    content: "•";
+    color: #1a237e;
+    position: absolute;
+    left: 0;
+}
+
+.contact-info {
+    background: #f8f9fa;
+    padding: 3rem;
+    margin-top: 3rem;
+    border-radius: 8px;
+    text-align: center;
+    border-top: 4px solid #1a237e;
+}
+
+.contact-info h3 {
+    color: #1a237e;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.contact-method {
+    padding: 1.5rem;
+}
+
+.contact-method h4 {
+    color: #1a237e;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.contact-method p {
+    color: #444;
+    line-height: 1.6;
+}
+
+.footer-info {
+    text-align: center;
+    color: #666;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .policies-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .policy-card {
+        padding: 1.5rem;
+    }
+    
+    .contact-info {
+        padding: 2rem;
+    }
+}

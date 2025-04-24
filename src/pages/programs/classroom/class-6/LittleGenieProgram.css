@@ -1,0 +1,115 @@
+.program-details {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.program-details h1 {
+    color: #003366;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.program-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.program-section h2 {
+    color: #003366;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #003366;
+}
+
+.program-section p {
+    color: #444;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.program-section ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.program-section ul li {
+    color: #444;
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.program-section ul li:before {
+    content: "•";
+    color: #003366;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* Update dropdown styles */
+.class-dropdown-item {
+    position: relative;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap;
+}
+
+.class-dropdown-item:hover {
+    background-color: #f0f4f8;
+}
+
+.program-submenu {
+    position: static !important; /* Changed from absolute to static */
+    width: 100%;
+    background: #f8f9fa;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    opacity: 1;
+    visibility: visible;
+}
+
+.class-dropdown-item:hover .program-submenu {
+    max-height: 200px;
+}
+
+.program-link {
+    display: block;
+    padding: 10px 30px; /* Increased left padding for indent */
+    color: #444;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-top: 1px solid #eee;
+}
+
+.program-link:hover {
+    background-color: #f0f4f8;
+    color: #003366;
+    padding-left: 35px;
+}
+
+.arrow-icon {
+    margin-left: 8px;
+    transform: rotate(90deg);
+    transition: transform 0.2s ease;
+}
+
+.class-dropdown-item:hover .arrow-icon {
+    transform: rotate(-90deg);
+}

@@ -1,0 +1,22 @@
+.dropdown-container {
+    margin: 10px 0;
+  }
+  
+  .dropdown-title {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    display: block;
+  }
+  
+  .dropdown-content {
+    padding: 15px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  

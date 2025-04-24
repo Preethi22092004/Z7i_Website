@@ -1,0 +1,47 @@
+/* Global bullet point styling */
+ul, ol {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.feature-list {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* Override any custom bullets */
+ul li::before, 
+ol li::before {
+  display: none !important;
+}
+
+/* Ensure nested lists have proper styling */
+ul ul, ol ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* For lists with custom styling classes */
+.program-card ul,
+.content-card ul,
+.accordion-item ul,
+.accordion-body ul,
+.card-body ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* Style any potential custom list classes */
+.with-bullets,
+.custom-list,
+.list-items,
+.bullet-list {
+  list-style-type: disc !important;
+  padding-left: 1.5rem !important;
+}
+
+/* For bullet point character used directly in text */
+.bullet-point::before {
+  content: "•";
+  margin-right: 0.5em;
+} 

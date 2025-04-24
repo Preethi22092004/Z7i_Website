@@ -1,0 +1,500 @@
+.custom-navbar {
+    background-color: white !important;
+    padding: 0 !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    min-height: 80px;
+}
+
+.custom-navbar .nav-link {
+    color: #002447 !important; /* Dark blue color */
+    font-weight: 600;
+    font-size: 0.9rem !important;
+    letter-spacing: 0.5px;
+    padding: 1rem 0.8rem !important;
+    transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #0056b3 !important; /* Lighter blue on hover */
+}
+
+.admission-button {
+    background-color: #ff0000 !important;
+    color: white !important;
+    border-radius: 4px;
+    padding: 0.5rem 1rem !important;
+    margin: 0 0.5rem;
+    font-weight: 600 !important;
+    font-size: 0.9rem !important;
+    transition: all 0.3s ease;
+    white-space: nowrap !important; /* Prevent text wrapping */
+    display: inline-block !important;
+}
+
+.admission-button:hover {
+    background-color: #cc0000 !important;
+    transform: translateY(-1px);
+}
+
+/* Update the brand logo styles */
+.brand-logo {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0;
+    position: relative;
+    z-index: 2;
+    isolation: isolate;
+}
+
+.nav-logo {
+    height: 60px;
+    width: auto;
+    max-width: 280px;  /* Reduced from 340px */
+    object-fit: contain;
+    position: relative;
+    z-index: 10;
+    /* Remove all color modifications */
+    mix-blend-mode: normal !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    background: transparent !important;
+    isolation: isolate;
+    transition: opacity 0.2s ease;
+}
+
+.nav-logo:hover {
+    opacity: 0.9;
+}
+
+/* Reset any potential color overrides */
+.navbar-brand {
+    background: none !important;
+    padding: 0;
+}
+
+/* Remove text fallback */
+.brand-text {
+    display: none;
+}
+
+/* Adjust container padding for larger logo */
+.custom-navbar .container {
+    padding: 0 1rem;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px !important;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Center align navigation items */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem; /* Reduced gap */
+    margin: 0 auto !important;
+}
+
+/* Toggle button styling */
+.toggle-button {
+    background: none;
+    border: none;
+    color: #002447;
+    padding: 0.5rem;
+    margin-left: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .navbar-nav {
+        padding: 1rem 0;
+    }
+    
+    .nav-link, 
+    .admission-button {
+        padding: 0.5rem 0 !important;
+        margin: 0.25rem 0;
+    }
+    
+    .main-nav {
+        padding: 1rem 0;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 1rem !important;
+    }
+    
+    .mega-menu {
+        padding: 0.5rem;
+    }
+
+    .admission-button {
+        text-align: center;
+        width: auto;
+        display: inline-block !important;
+    }
+}
+
+/* Update header banner style */
+.bg-[#003366] {
+    background-color: white !important;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+/* Update mega-menu styles */
+.mega-menu {
+    padding: 20px;
+    min-width: 320px;
+    max-height: calc(100vh - 100px);
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 0 0 4px 4px;
+    position: fixed;
+    top: 80px;
+    background: white;
+}
+
+/* Add custom scrollbar */
+.mega-menu::-webkit-scrollbar {
+    width: 8px;
+}
+
+.mega-menu::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.mega-menu::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.mega-menu::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Update dropdown positioning and behavior */
+.custom-dropdown {
+    position: relative !important;
+}
+
+.custom-dropdown .mega-menu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 320px;
+    max-height: 80vh;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 0 0 4px 4px;
+    background: white;
+    z-index: 1000;
+    transition: all 0.2s ease-in-out;
+    pointer-events: none;
+}
+
+.custom-dropdown:hover .mega-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
+/* Remove old animations */
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add dropdown transition delay */
+.custom-dropdown .nav-link {
+    transition: color 0.2s ease;
+}
+
+/* Remove duplicate hover states and animations */
+.custom-dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Update menu item transitions */
+.custom-dropdown .dropdown-item {
+    transition: all 0.15s ease-in-out;
+}
+
+/* Remove duplicate animation */
+.custom-dropdown:hover .mega-menu {
+    display: block;
+}
+
+/* Center align dropdown if it goes off-screen */
+@media (min-width: 992px) {
+    .custom-dropdown .mega-menu {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Update menu section spacing */
+.menu-section {
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+}
+
+.menu-section:last-child {
+    margin-bottom: 0;
+}
+
+.menu-section h6 {
+    color: #003366;
+    font-weight: 700;
+    font-size: 15px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #003366;
+    letter-spacing: 0.5px;
+}
+
+.custom-dropdown .dropdown-item {
+    padding: 10px 15px;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background-color: #f0f4f8;
+    color: #003366;
+    padding-left: 20px;
+}
+
+.dropdown-divider {
+    margin: 15px 0;
+    border-top: 1px solid #e9ecef;
+}
+
+.custom-dropdown .nav-link {
+    font-weight: 600;
+    position: relative;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add nested dropdown styles */
+.nested-dropdown {
+    position: relative !important;
+    width: 100%;
+}
+
+.nested-dropdown .sub-menu {
+    position: absolute !important;
+    left: 100% !important;
+    top: 0 !important;
+    min-width: 400px;
+    background: white;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.nested-dropdown:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.program-content {
+    padding: 15px 0;
+}
+
+.program-content h5 {
+    color: #003366;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.program-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.program-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.program-content ul li {
+    font-size: 14px;
+    color: #666;
+    padding: 4px 0;
+    position: relative;
+    padding-left: 20px;
+}
+
+.program-content ul li:before {
+    content: "•";
+    color: #003366;
+    position: absolute;
+    left: 0;
+}
+
+/* Add these new styles */
+.class-dropdown-item {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px 15px !important;
+    color: #444 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    cursor: pointer !important;
+}
+
+.class-dropdown-item:hover {
+    background-color: #f0f4f8 !important;
+    color: #003366 !important;
+}
+
+.arrow-icon {
+    margin-left: 8px;
+    font-size: 14px;
+    color: inherit;
+}
+
+.program-submenu {
+    position: absolute !important;
+    left: 100% !important;
+    top: 0 !important;
+    min-width: 300px;
+    background: white;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.2s ease-in-out;
+    z-index: 1001;
+}
+
+.class-dropdown-item:hover .program-submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.program-link {
+    display: block;
+    padding: 10px 15px;
+    color: #444;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.program-link:hover {
+    background-color: #f0f4f8;
+    color: #003366;
+    padding-left: 20px;
+}
+
+/* Update the dropdown styles */
+.class-dropdown-item {
+    position: relative;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.class-dropdown-item .program-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    min-width: 300px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+/* Show submenu only on hover */
+.class-dropdown-item:hover .program-submenu {
+    display: block;
+}
+
+/* Add transition for smooth appearance */
+.program-submenu {
+    transition: all 0.3s ease;
+}
+
+.program-link {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    white-space: normal;
+    border-bottom: 1px solid #eee;
+}
+
+.program-link:hover {
+    background-color: #f5f5f5;
+    color: #003366;
+}
+
+/* Hide dropdown by default */
+.mega-menu .program-submenu {
+    display: none;
+}
+
+/* Show dropdown only when parent is hovered */
+.class-dropdown-item:hover > .program-submenu {
+    display: block;
+}
+
+.view-all-link {
+    background-color: #f5f8ff;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.view-all-link:hover {
+    background-color: #e0e8ff;
+}

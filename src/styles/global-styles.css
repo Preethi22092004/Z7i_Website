@@ -1,0 +1,121 @@
+/* Global Styles for Z7i Website */
+
+/* Page container styling for all content pages */
+.page-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  background-color: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+
+/* Universal heading styles */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Universal paragraph styles */
+p {
+  color: #000000 !important;
+  line-height: 1.6;
+}
+
+/* Universal link styles */
+a {
+  color: #ffd700;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Content section styling */
+.content-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: transparent;
+  border-radius: 0;
+  border: none;
+}
+
+/* Buttons */
+button, .button {
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+button:hover, .button:hover {
+  background-color: #cc0000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input fields */
+input, textarea, select {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: #333;
+}
+
+/* Lists */
+ul, ol {
+  color: #ffffff;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: transparent;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+th {
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Card style for content blocks */
+.card {
+  background-color: transparent;
+  border-radius: 0;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+/* Apply transition to all elements for smooth effects */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+} 
