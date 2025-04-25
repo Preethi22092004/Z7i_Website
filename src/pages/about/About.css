@@ -278,13 +278,16 @@
 .chairman-name h3 {
     color: #1a237e;
     margin: 10px 0 5px;
+    margin-top: 30px;
     font-size: 1.2rem;
+    margin-right: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .chairman-name p {
-    margin: 5px 0;
-    color: #555;
-    font-size: 0.9rem;
+   
 }
 
 .message-content {

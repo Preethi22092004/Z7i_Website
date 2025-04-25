@@ -13,11 +13,12 @@ const Chairman = () => {
         <section className="chairman-message">
           <div className="chairman-container">
             <div className="chairman-profile">
-              <img src="/images/chairman image.jpg" alt="Chairman D.K. Goel" className="chairman-img" />
-              <div className="chairman-name">
-                <h3>D.K. Goel</h3>
-                <p>Founder Chairman and Chief Mentor</p>
-                <p>Z7i Group</p>
+              <img src="/images/chairman_image.png" alt="Chairman D.K. Goel" className="chairman-img" />
+              <div className="chairman-name ">
+                <h3>Shri.V.LAKSHMINARAYANASAMY</h3>
+                <p> Chairman-Z7i Group</p>
+                
+                
               </div>
             </div>
             
@@ -44,8 +45,8 @@ const Chairman = () => {
 
               <div className="signature">
                 <p>Wishing the very best</p>
-                <h3>D.K. Goel</h3>
-                <p className="designation">Founder Chairman and Chief Mentor</p>
+                <h3>Shri.V.LAKSHMINARAYANASAMY</h3>
+                <p className="designation"> Chairman </p>
                 <p className="company">Z7i Group</p>
               </div>
             </div>
