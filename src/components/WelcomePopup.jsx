@@ -6,14 +6,17 @@ const WelcomePopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Check if popup has been shown this session
-    const hasPopupBeenShown = localStorage.getItem('welcomePopupShown');
+    // Check if popup has been shown ever (not just this session)
+    const hasPopupBeenShown = localStorage.getItem('welcomePopupShownPermanent');
+    console.log('Popup shown status:', hasPopupBeenShown);
     
     if (!hasPopupBeenShown) {
+      console.log('Setting up popup timer');
       const timer = setTimeout(() => {
+        console.log('Showing popup');
         setIsOpen(true);
-        // Mark popup as shown for this session
-        localStorage.setItem('welcomePopupShown', 'true');
+        // Mark popup as shown permanently
+        localStorage.setItem('welcomePopupShownPermanent', 'true');
       }, 1000);
       
       return () => clearTimeout(timer);
@@ -46,7 +49,7 @@ const WelcomePopup = () => {
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm">
+        <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/70 backdrop-blur-sm">
           <motion.div
             variants={popupVariants}
             initial="hidden"
