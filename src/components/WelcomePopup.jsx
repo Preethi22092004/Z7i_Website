@@ -6,8 +6,18 @@ const WelcomePopup = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsOpen(true), 1000);
-    return () => clearTimeout(timer);
+    // Check if popup has been shown this session
+    const hasPopupBeenShown = localStorage.getItem('welcomePopupShown');
+    
+    if (!hasPopupBeenShown) {
+      const timer = setTimeout(() => {
+        setIsOpen(true);
+        // Mark popup as shown for this session
+        localStorage.setItem('welcomePopupShown', 'true');
+      }, 1000);
+      
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   const popupVariants = {

@@ -90,6 +90,10 @@ const PageWrapper = ({ children }) => {
   );
 };
 
+import JeeAdvanced from './pages/target-exams/JeeAdvanced';
+import JeeMain from './pages/target-exams/JeeMain';
+import Olympiads from './pages/target-exams/Olympiads';
+
 function App() {
   return (
     <Layout>
@@ -382,6 +386,21 @@ function App() {
           } />
           
           <Route path="/contact" element={<Contact />} />
+          <Route path="/target-exams/jee-advanced" element={
+            <PageWrapper>
+              <JeeAdvanced />
+            </PageWrapper>
+          } />
+          <Route path="/target-exams/jee-main" element={
+            <PageWrapper>
+              <JeeMain />
+            </PageWrapper>
+          } />
+          <Route path="/target-exams/olympiads" element={
+            <PageWrapper>
+              <Olympiads />
+            </PageWrapper>
+          } />
         </Routes>
       </AnimatePresence>
     </Layout>

@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
       subtitle: 'Find a Z7i Near You',
       backgroundImage: '/images/centres.png',
       imagePosition: {
-        y: '30%'  // Adjust this percentage to move image position
+        y: '50%'  // Adjust this percentage to move image position
       }
     },
     '/facilities/hostels': {
@@ -66,7 +66,7 @@ const Layout = ({ children }) => {
       subtitle: 'Get Your Answers Here',
       backgroundImage: '/images/downloads-hero.png',
       imagePosition: {
-        y: '40%'  // Adjust this percentage to move image position
+        y: '45%'  // Adjust this percentage to move image position
       }
     },
     '/about/testimonials': {
@@ -95,7 +95,7 @@ const Layout = ({ children }) => {
       subtitle: 'Track Record of Excellence',
       backgroundImage: '/images/downloads-hero.png',
       imagePosition: {
-        y: '40%'  // Adjust this percentage to move image position
+        y: '45%'  // Adjust this percentage to move image position
       }
     },
     '/why-z7i': {

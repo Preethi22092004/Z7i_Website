@@ -11,16 +11,8 @@ const targetExamsData = [
     description: 'National level engineering entrance exam preparation with focused study material and test series.',
   },
   {
-    title: 'NEET-UG',
-    description: 'Medical entrance examination preparation with specialized coaching and practice modules.',
-  },
-  {
-    title: 'AIIMS',
-    description: 'Dedicated preparation program for All India Institute of Medical Sciences entrance examination.',
-  },
-  {
-    title: 'Foundation Programs',
-    description: 'Early preparation courses for students aspiring for JEE/NEET from class VI onwards.',
+    title: 'Olympaids',
+    description: 'National level engineering entrance exam preparation with focused study material and test series.',
   },
 ];
 

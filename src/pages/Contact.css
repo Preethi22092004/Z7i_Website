@@ -155,132 +155,261 @@
 }
 
 .map-responsive {
-  overflow: hidden;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  height: 0;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+.program-container {
+  padding-bottom: 60px;
+  background: transparent;
+}
+
+.program-header {
+  background: transparent;
+  color: black;
+  padding: 60px 0 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.program-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.program-header h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* Cards Grid Layout */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.program-card {
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 500px;
+  margin-bottom: 30px;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.program-card .card-header {
+  background: #000;
+  color: white;
+  padding: 1.2rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+}
+
+.program-card .card-body {
+  padding: 2rem;
+}
+
+.program-card p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.feature-list li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+}
+
+.feature-list li:last-child {
+  border-bottom: none;
+}
+
+.feature-list a {
+  color: #161153;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.feature-list a:hover {
+  color: #d85600;
+  text-decoration: underline;
+}
+
+/* Map Container */
+.map-container {
+  max-width: 960px; /* Align width with cards */
+  margin: 40px auto 0 auto; /* Center horizontally with margin top */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  box-sizing: border-box;
+}
+.location-text {
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.contact-content-wrapper {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.info-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.address-section {
+  background: rgba(248, 249, 250, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.location-text {
+  background: rgba(248, 249, 250, 0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #161153;
+  color: #444;
+  font-weight: 500;
+}
+
+.map-section {
+  flex: 1;
+  min-width: 400px;
+}
+
+.map-responsive {
+  position: relative;
+  overflow: hidden;
+  padding-top: 100%; /* Make it square */
   height: 0;
   border-radius: 8px;
 }
 
 .map-responsive iframe {
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
   border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.program-container {
-padding-bottom: 60px;
-}
-
-.program-header {
-background: linear-gradient(135deg, #3498db, #2c3e50);
-color: white;
-padding: 60px 0 40px;
-margin-bottom: 40px;
-text-align: center;
-}
-
-.program-header h1 {
-font-size: 2.5rem;
-font-weight: 700;
-margin-bottom: 15px;
-}
-
-.program-header h2 {
-font-size: 1.5rem;
-font-weight: 400;
-opacity: 0.9;
-}
-
-/* Cards Grid Layout */
-.cards-grid {
-display: grid;
-grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-gap: 24px;
-margin-bottom: 40px;
-align-items: stretch;
-}
-
-/* Program Cards */
 .program-card {
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-border: none;
-border-radius: 8px;
-overflow: hidden;
-height: 100%;
-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-display: flex;
-flex-direction: column;
+  background: linear-gradient(to right, #f8f9fa, #ffffff);
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 40px;
+  width: 100%;
 }
 
-/* Ensure card header and body take appropriate space */
+.program-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
 .program-card .card-header {
-background-color: #2c3e50;
-color: white;
-font-weight: 600;
-font-size: 1.2rem;
-padding: 15px 20px;
-position: relative;
-flex-shrink: 0;
-}
-
-.program-card .card-header::after {
-content: "";
-position: absolute;
-bottom: 0;
-left: 0;
-width: 100%;
-height: 3px;
-background: linear-gradient(90deg, #1a237e 0%, #5c6bc0 100%);
+  background: #000;
+  color: white;
+  padding: 1.5rem 2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border: none;
+  border-radius: 12px 12px 0 0;
 }
 
 .program-card .card-body {
-padding: 20px;
-flex-grow: 1;
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
+  padding: 2.5rem;
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 0 0 12px 12px;
 }
 
 .program-card p {
-color: #444;
-line-height: 1.6;
-margin-bottom: 15px;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  font-size: 1.1rem;
 }
 
-/* Feature Lists */
 .feature-list {
-list-style: none;
-padding-left: 0;
-margin: 0;
-flex-grow: 1;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .feature-list li {
-color: #444;
-padding: 0.5rem 0;
-padding-left: 1.5rem;
-position: relative;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
 }
 
-.feature-list li:before {
-content: "•";
-color: #3498db;
-position: absolute;
-left: 0;
-font-weight: bold;
+.feature-list li:last-child {
+  border-bottom: none;
 }
 
-/* Map Container */
-.map-container {
-max-width: 960px; /* Align width with cards */
-margin: 40px auto 0 auto; /* Center horizontally with margin top */
-background-color: white;
-border-radius: 8px;
-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-padding: 25px;
-box-sizing: border-box;
+.feature-list a {
+  color: #161153;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+.feature-list a:hover {
+  color: #d85600;
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .contact-content-wrapper {
+    flex-direction: column;
+  }
+
+  .map-section {
+    min-width: 100%;
+  }
+
+  .map-responsive {
+    padding-top: 60%; /* Adjust aspect ratio for mobile */
+  }
+}
+

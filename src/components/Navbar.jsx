@@ -32,23 +32,9 @@ const NavigationBar = () => {
 
               <NavDropdown title="TARGET EXAMS" id="target-exams-dropdown" className="custom-dropdown">
                 <div className="mega-menu">
-                  <div className="menu-section">
-                    <h6>JEE PROGRAMS</h6>
-                    <NavDropdown.Item as={NavLink} to="/target-exams/jee-advanced">JEE Advanced</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/target-exams/jee-main">JEE Main</NavDropdown.Item>
-                  </div>
-                  <NavDropdown.Divider />
-                  <div className="menu-section">
-                    <h6>MEDICAL PROGRAMS</h6>
-                    <NavDropdown.Item as={NavLink} to="/target-exams/neet">NEET-UG</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/target-exams/aiims">AIIMS</NavDropdown.Item>
-                  </div>
-                  <NavDropdown.Divider />
-                  <div className="menu-section">
-                    <h6>MODE OF STUDY</h6>
-                    <NavDropdown.Item as={NavLink} to="/target-exams/classroom">Classroom Programs</NavDropdown.Item>
-                    <NavDropdown.Item as={NavLink} to="/target-exams/online">Online Programs</NavDropdown.Item>
-                  </div>
+                  <NavDropdown.Item as={NavLink} to="/target-exams/jee-advanced">JEE Advanced</NavDropdown.Item>
+                  <NavDropdown.Item as={NavLink} to="/target-exams/jee-main">JEE Main</NavDropdown.Item>
+                  <NavDropdown.Item as={NavLink} to="/target-exams/olympiads">Olympaids</NavDropdown.Item>
                 </div>
               </NavDropdown>
 
@@ -406,13 +392,13 @@ const NavigationBar = () => {
                 </div>
               </NavDropdown>
 
-              <Nav.Link as={NavLink} to="/admissions" className="admission-button">
-                UPCOMING&nbsp;ADMISSION&nbsp;TEST
-              </Nav.Link>
-              
               <Nav.Link as={NavLink} to="/results">RESULTS</Nav.Link>
               
               <Nav.Link as={NavLink} to="/contact">CONTACT</Nav.Link>
+
+              <Nav.Link as={NavLink} to="/admissions" className="admission-button">
+                UPCOMING&nbsp;ADMISSION&nbsp;TEST
+              </Nav.Link>
             </Nav>
             
             <button className="toggle-button" onClick={() => setIsSidebarOpen(true)}>
